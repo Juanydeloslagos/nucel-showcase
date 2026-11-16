@@ -64,6 +64,10 @@ flowchart LR
 - Logging discipline: logs must exclude credentials, JWTs, personal data, and imported row contents
 - Documented modernization roadmap: target framework upgrades, dependency migration, integration tests for migrations/imports/commissions/tenant boundaries, authenticated browser tests, and a non-root production image before release
 
+## Release discipline
+
+Recent work on the platform follows a strict release-evidence process: conventional commits (`docs:`, `ci:`, `build:`, `test:`, `fix:`), locked maintained dependency graphs, an SBOM retained for recovery evidence, and CI verification of release tags — every release is auditable from commit to artifact.
+
 ## Quality gates
 
 - Both runtimes compile on **.NET 8** with a clean managed dependency audit
